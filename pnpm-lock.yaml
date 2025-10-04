@@ -11,6 +11,9 @@ importers:
       '@ai-sdk/openai':
         specifier: ^1.3.24
         version: 1.3.24(zod@3.25.76)
+      '@mastra/auth-auth0':
+        specifier: ^0.10.5
+        version: 0.10.5
       '@mastra/core':
         specifier: latest
         version: 0.20.0(openapi-types@12.1.3)(react@19.2.0)(zod@3.25.76)
@@ -445,6 +448,9 @@ packages:
 
   '@jsdevtools/ono@7.1.3':
     resolution: {integrity: sha512-4JQNk+3mVzK3xh2rqd6RB4J46qUR19azEHBneZyTZM+c456qOrbbM/5xcR8huNCCcbVt7+UmizG6GuUvPvKUYg==}
+
+  '@mastra/auth-auth0@0.10.5':
+    resolution: {integrity: sha512-TRKR9dqkoYvK5pfPtUwDgGc7aaR/3Q6HRP0H7lUok5CJ5idsvMCc9OIMd2dQfd0RIEVytwEcZNNrUO8gkFo9zg==}
 
   '@mastra/core@0.20.0':
     resolution: {integrity: sha512-zFGnUUTJmJSaWaTnPxpW0GB6iFQyFTY2Iq4towAv8mhtDqiZYSgLi630BPQ3Atj+q5bX1xSHFFKUaOQA3fkikA==}
@@ -2205,6 +2211,9 @@ packages:
     resolution: {integrity: sha512-ekilCSN1jwRvIbgeg/57YFh8qQDNbwDb9xT/qu2DAHbFFZUicIl4ygVaAvzveMhMVr3LnpSKTNnwt8PoOfmKhQ==}
     hasBin: true
 
+  jose@6.1.0:
+    resolution: {integrity: sha512-TTQJyoEoKcC1lscpVDCSsVgYzUDg/0Bt3WE//WiTPK6uOCQC2KZS4MpugbMWt/zyjkopgZoXhZuCi00gLudfUA==}
+
   joycon@3.1.1:
     resolution: {integrity: sha512-34wB/Y7MW7bzjKRjUKTa46I2Z7eV62Rkhva+KkopW7Qvv/OSWBqvkSY7vusOPrNuZcUG3tApvdVgNB8POj3SPw==}
     engines: {node: '>=10'}
@@ -3473,6 +3482,10 @@ snapshots:
   '@js-sdsl/ordered-map@4.4.2': {}
 
   '@jsdevtools/ono@7.1.3': {}
+
+  '@mastra/auth-auth0@0.10.5':
+    dependencies:
+      jose: 6.1.0
 
   '@mastra/core@0.20.0(openapi-types@12.1.3)(react@19.2.0)(zod@3.25.76)':
     dependencies:
@@ -5467,6 +5480,8 @@ snapshots:
       '@pkgjs/parseargs': 0.11.0
 
   jiti@2.6.1: {}
+
+  jose@6.1.0: {}
 
   joycon@3.1.1: {}
 
