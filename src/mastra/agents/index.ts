@@ -1,6 +1,7 @@
 import { openai } from '@ai-sdk/openai';
 import { Agent } from '@mastra/core/agent';
 import { weatherTool } from '../tools';
+import { Memory } from "@mastra/memory";
 
 export const weatherAgent = new Agent({
   name: 'Weather Agent',
@@ -17,5 +18,6 @@ export const weatherAgent = new Agent({
       Use the weatherTool to fetch current weather data.
 `,
   model: openai('gpt-4o'),
+  memory: new Memory(),
   tools: { weatherTool },
 });

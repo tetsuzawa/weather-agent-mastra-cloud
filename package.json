@@ -4,6 +4,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "build": "tsdown",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "mastra dev"
   },
@@ -20,8 +21,9 @@
     "zod": "^3.25.76"
   },
   "devDependencies": {
-    "@types/node": "^22.15.29",
+    "@types/node": "22.18.8",
     "mastra": "latest",
-    "typescript": "^5.8.3"
+    "tsdown": "0.15.6",
+    "typescript": "5.9.3"
   }
 }
